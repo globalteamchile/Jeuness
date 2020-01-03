@@ -12,7 +12,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: CarritoComponent
+        component: HomeComponent
       },
       {
         path: 'evento',
@@ -25,6 +25,10 @@ const routes: Routes = [
       {
         path: 'carrito',
         component: CarritoComponent
+      },
+      {
+        path: '**',
+        component: HomeComponent
       }
     ]
 

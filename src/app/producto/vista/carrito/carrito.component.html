@@ -1,33 +1,30 @@
-    <div class="card-columns margen-top">
-        <div class="card">
-            <img src="assets/imagen/carrito.png" alt="Producto suero" class="card-img-top imagen">
-            <div class="card-body">
-                <h2>1</h2>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente culpa sint deleniti officia ullam debitis deserunt esse,
-                    natus laborum ex neque libero quod sed sunt reprehenderit labore
-                    ad delectus consequuntur?
-                </p>
-                <div>
-                    <div class="card-footer">
-                        <form action="/checkout" method="POST">
+<div class="card-columns margen-top">
+    <div class="card">
+        <div class="card-body">
+            <img src="assets/imagen/producto1.jpg" alt="Producto suero" class="img-fluid img-producto">
+            <h2>1</h2>            
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente culpa sint deleniti officia ullam debitis deserunt esse,
+                natus laborum ex neque libero quod sed sunt reprehenderit labore
+                ad delectus consequuntur?
+            </p>
+            <div>
+                <div class="card-footer">
+                    <form action="/checkout" method="POST">
                         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                             data-key="pk_test_vOz55EGl158pHyVjMMmM29Nt00JJkPKH2s" data-amount="3000"
-                            data-name="Software Store"
-                            data-description="Software Video Editing"
-                            data-image="jeunesse.jfif"
-                            data-locale="auto"
-                        ></script>
+                            data-name="Software Store" data-description="Software Video Editing"
+                            data-image="jeunesse.jfif" data-locale="auto"></script>
                         <script>
-                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
-                    </script>
-                    <button class="btn btn-dark btn-block">
-                        Buy <i class="fas fa-shopping-cart"></i>
-                    </button>
-                </form>
-                    </div>
+                            document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                        </script>
+                        <button class="btn btn-dark btn-block">
+                            Buy <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
