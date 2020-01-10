@@ -1,7 +1,7 @@
 <div class="card-columns margen-top">
     <div class="card">
         <div class="card-body">
-            <img src="assets/imagen/producto1.jpg" alt="Producto suero" class="img-fluid img-producto">
+            <img src="assets/imagen/crema_suero.jpg" alt="Producto suero" class="img-fluid img-producto">
             <h2>1</h2>            
             <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -11,7 +11,7 @@
             </p>
             <div>
                 <div class="card-footer">
-                    <form action="/checkout" method="POST">
+                    <!-- <form action="/checkout" method="POST">
                         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                             data-key="pk_test_vOz55EGl158pHyVjMMmM29Nt00JJkPKH2s" data-amount="3000"
                             data-name="Software Store" data-description="Software Video Editing"
@@ -22,7 +22,11 @@
                         <button class="btn btn-dark btn-block">
                             Buy <i class="fas fa-shopping-cart"></i>
                         </button>
-                    </form>
+                    </form> -->
+                    <button (click)="f_pago(10)" class="btn btn-dark btn-block">
+                        Buy <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button id="i_btnStripe" type="button" (click)="f_generaPagoStripe()">.</button>
                 </div>
             </div>
         </div>

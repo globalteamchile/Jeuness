@@ -11,7 +11,7 @@ const routes: Routes = [
     canActivate: [],
     children: [
       {
-        path: '',
+        path: 'carrito',
         component: HomeComponent
       },
       {
@@ -23,7 +23,7 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'carrito',
+        path: '',
         component: CarritoComponent
       },
       {

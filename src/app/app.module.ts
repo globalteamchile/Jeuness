@@ -8,6 +8,8 @@ import { OfertaComponent } from './producto/modal/oferta/oferta.component';
 import { HomeComponent } from './producto/vista/home/home.component';
 import { CarritoComponent } from './producto/vista/carrito/carrito.component';
 import { NavComponent } from './producto/vista/nav/nav.component';
+import { ConsumoService } from './producto/services/consumo.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { NavComponent } from './producto/vista/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: ConsumoService, useClass: ConsumoService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
